@@ -8,6 +8,7 @@
   # Simply install just the packages
   environment.packages = with pkgs;
   [
+    curl
     vim
 
     neovim
