@@ -1,17 +1,9 @@
 {
-  description =
-    "Basic example of Nix-on-Droid config."
-  ;
+  description = "Basic example of config.";
   inputs = {
-    nixpkgs.url =
-      "github:NixOS/nixpkgs/nixos-24.05"
-    ;
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
     nix-on-droid = {
-      let repository =
-        "nix-community/nix-on-droid"
-      ;
-      let release = "release-24.05";
-      url = "github:${repository}/${release}";
+      url = "github:nix-community/nix-on-droid/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
