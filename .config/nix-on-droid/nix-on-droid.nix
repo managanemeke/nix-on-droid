@@ -9,6 +9,7 @@
   environment.packages = with pkgs;
   [
     curl
+    openssh
     vim
 
     neovim
