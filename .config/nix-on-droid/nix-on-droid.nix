@@ -12,11 +12,11 @@
     openssh
     vim
 
-    neovim
     git
     git-annex
     lua5_1
     luarocks
+    neovim
 
     # Some common stuff that people expect
 
