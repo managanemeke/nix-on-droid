@@ -11,6 +11,7 @@
     curl
     openssh
     vim
+    wget
 
     git
     git-annex
