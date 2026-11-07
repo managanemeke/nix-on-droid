@@ -10,3 +10,6 @@ curl -fL \
   -o ~/.config/nix-on-droid/nix-on-droid.nix \
   https://raw.githubusercontent.com/managanemeke/nix-on-droid/main/.config/nix-on-droid/nix-on-droid.nix
 
+nix-on-droid switch \
+  --flake ~/.config/nix-on-droid
+
