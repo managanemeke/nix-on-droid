@@ -18,6 +18,11 @@
     luarocks
     neovim
 
+    # ocaml
+    ocamlPackages.ocaml
+    ocamlPackages.dune_3
+    ocamlPackages.findlib
+
     # Some common stuff that people expect
 
     #procps
