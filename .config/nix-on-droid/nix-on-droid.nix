@@ -12,6 +12,7 @@
     openssh
     vim
     wget
+    zsh
 
     git
     git-annex
