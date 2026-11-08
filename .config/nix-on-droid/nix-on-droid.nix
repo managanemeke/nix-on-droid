@@ -14,7 +14,7 @@
     wget
     zsh
 
-    sed
+    gnused
 
     git
     git-annex
