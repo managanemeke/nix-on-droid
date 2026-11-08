@@ -14,6 +14,8 @@
     wget
     zsh
 
+    sed
+
     git
     git-annex
     lua5_1
