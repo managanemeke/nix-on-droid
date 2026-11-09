@@ -1,3 +1,4 @@
+
 {
   description = "Basic example of config.";
   inputs = {
@@ -6,11 +7,16 @@
       url = "github:nix-community/nix-on-droid/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    neovim-repo = {
+      url = "github:neovim/neovim/v0.10.0?dir=contrib";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs = {
     self,
     nixpkgs,
     nix-on-droid,
+    neovim-repo,
   }: {
     nixOnDroidConfigurations.default =
       nix-on-droid.lib.nixOnDroidConfiguration {
@@ -19,6 +25,10 @@
         };
         modules = [
           ./nix-on-droid.nix
+          {
+            config._module.args.neovimPkg =
+              neovim-repo.packages.aarch64-linux.neovim;
+          }
         ];
       }
     ;

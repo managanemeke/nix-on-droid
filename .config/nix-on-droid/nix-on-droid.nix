@@ -2,6 +2,7 @@
   config,
   lib,
   pkgs,
+  neovimPkg,
   ...
 }:
 {
@@ -20,7 +21,7 @@
     git-annex
     lua5_1
     luarocks
-    neovim
+    neovimPkg
 
     # ocaml
     ocamlPackages.ocaml
