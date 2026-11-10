@@ -49,6 +49,10 @@
     #unzip
   ];
 
+  environment.sessionVariables = {
+    NIX_ON_DROID = "1";
+  };
+
   # Backup etc files instead of failing
   # to activate gene ration if a file
   # already exists in /etc
