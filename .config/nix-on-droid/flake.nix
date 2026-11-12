@@ -1,4 +1,3 @@
-
 {
   description = "Basic example of config.";
   inputs = {
