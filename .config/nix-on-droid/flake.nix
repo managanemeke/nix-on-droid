@@ -6,8 +6,8 @@
       url = "github:nix-community/nix-on-droid/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    neovim-repo = {
-      url = "github:neovim/neovim/v0.12.0?dir=contrib";
+    neovim-nightly-overlay = {
+      url = "github:nix-community/neovim-nightly-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -15,7 +15,7 @@
     self,
     nixpkgs,
     nix-on-droid,
-    neovim-repo,
+    neovim-nightly-overlay,
   }: {
     nixOnDroidConfigurations.default =
       nix-on-droid.lib.nixOnDroidConfiguration {
@@ -26,11 +26,9 @@
           ./nix-on-droid.nix
           {
             config._module.args.neovimPkg =
-              neovim-repo.packages.aarch64-linux.neovim;
+              neovim-nightly-overlay.packages.aarch64-linux.default;
           }
         ];
-      }
-    ;
+      };
   };
 }
-
