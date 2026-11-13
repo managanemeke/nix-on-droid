@@ -8,7 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     neovim-repo = {
-      url = "github:neovim/neovim/v0.10.4?dir=contrib";
+      url = "github:neovim/neovim/v0.10.1?dir=contrib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
