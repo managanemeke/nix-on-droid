@@ -21,6 +21,7 @@
 
     python3
 
+    gnutar
     gnused
 
     git
