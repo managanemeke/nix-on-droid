@@ -15,6 +15,8 @@
     wget
     zsh
 
+    nushell
+
     gnused
 
     git
