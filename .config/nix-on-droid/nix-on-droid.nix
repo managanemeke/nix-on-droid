@@ -20,6 +20,8 @@
     just
 
     rustup
+    gcc
+    pkg-config
 
     python3
     pkgsUnstable.uv
