@@ -19,6 +19,8 @@
     pkgsUnstable.nushell
     just
 
+    rustup
+
     python3
     pkgsUnstable.uv
 
