@@ -21,6 +21,9 @@
   }:
   let
     system = "aarch64-linux";
+    pkgs = import nixpkgs {
+      inherit system;
+    };
     pkgsUnstable = import nixpkgs-unstable {
       inherit system;
     };
@@ -28,6 +31,7 @@
   in {
     nixOnDroidConfigurations.default =
       nix-on-droid.lib.nixOnDroidConfiguration {
+        inherit pkgs; 
         modules = [
           ./nix-on-droid.nix
           {
