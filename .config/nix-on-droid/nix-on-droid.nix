@@ -20,6 +20,7 @@
     just
 
     python3
+    pkgsUnstable.uv
 
     gawk
     gnugrep
