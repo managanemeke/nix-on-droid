@@ -1,8 +1,8 @@
-
 {
   description = "Basic example of config.";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     nix-on-droid = {
       url = "github:nix-community/nix-on-droid/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -15,23 +15,29 @@
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-unstable,
     nix-on-droid,
     neovim-repo,
-  }: {
+  }:
+  let
+    system = "aarch64-linux";
+    pkgsUnstable = import nixpkgs-unstable {
+      inherit system;
+    };
+    neovimPkg = neovim-repo.packages.${system}.neovim;
+  in {
     nixOnDroidConfigurations.default =
       nix-on-droid.lib.nixOnDroidConfiguration {
-        pkgs = import nixpkgs {
-          system = "aarch64-linux";
-        };
         modules = [
           ./nix-on-droid.nix
           {
-            config._module.args.neovimPkg =
-              neovim-repo.packages.aarch64-linux.neovim;
+            config._module.args.neovimPkg = neovimPkg;
           }
         ];
-      }
-    ;
+        extraSpecialArgs = {
+          inherit pkgsUnstable;
+        };
+      };
   };
 }
 

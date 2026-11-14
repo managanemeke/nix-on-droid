@@ -3,6 +3,7 @@
   lib,
   pkgs,
   neovimPkg,
+  pkgsUnstable,
   ...
 }:
 {
@@ -15,7 +16,7 @@
     wget
     zsh
 
-    nushell
+    pkgsUnstable.nushell
 
     gnused
 
