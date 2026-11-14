@@ -19,6 +19,8 @@
     pkgsUnstable.nushell
     just
 
+    go
+
     rustup
     gcc
     pkg-config
