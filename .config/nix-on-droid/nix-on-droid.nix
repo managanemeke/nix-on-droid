@@ -19,6 +19,9 @@
     pkgsUnstable.nushell
     just
 
+    python3
+    uv
+
     gnused
 
     git
