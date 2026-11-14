@@ -21,6 +21,7 @@
 
     python3
 
+    gawk
     gnugrep
     gnused
     gnutar
