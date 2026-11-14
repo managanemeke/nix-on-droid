@@ -56,13 +56,6 @@
     NIX_ON_DROID = "1";
   };
 
-  environment.interactiveShellInit = ''
-    if [[ $- == *i* ]] && [ -t 0 ] && shopt -q login_shell && [[ -z "$NU_ALREADY_STARTED" ]]; then
-      export NU_ALREADY_STARTED=1
-      exec ${pkgsUnstable.nushell}/bin/nu --login
-    fi
-  '';
-
   # Backup etc files instead of failing
   # to activate gene ration if a file
   # already exists in /etc
