@@ -17,6 +17,7 @@
     zsh
 
     pkgsUnstable.nushell
+    just
 
     gnused
 
