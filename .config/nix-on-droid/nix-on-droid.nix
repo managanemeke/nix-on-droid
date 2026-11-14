@@ -21,8 +21,9 @@
 
     python3
 
-    gnutar
+    gnugrep
     gnused
+    gnutar
 
     git
     git-annex
@@ -45,10 +46,7 @@
     #tzdata
     #hostname
     #man
-    #gnugrep
     #gnupg
-    #gnused
-    #gnutar
     #bzip2
     #gzip
     #xz
