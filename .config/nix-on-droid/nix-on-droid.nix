@@ -22,6 +22,7 @@
     rustup
     gcc
     pkg-config
+    gnumake
 
     python3
     pkgsUnstable.uv
