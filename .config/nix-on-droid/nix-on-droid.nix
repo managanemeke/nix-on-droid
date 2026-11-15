@@ -45,6 +45,9 @@
     ocamlPackages.dune_3
     ocamlPackages.findlib
 
+    kotlin
+    gradle
+
     # Some common stuff that people expect
 
     #procps
