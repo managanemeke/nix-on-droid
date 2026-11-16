@@ -29,8 +29,6 @@
     python3
     pkgsUnstable.uv
 
-    clang
-
     gawk
     gnugrep
     gnused
