@@ -51,6 +51,9 @@
     nim
     nimble
 
+    php
+    php.packages.composer
+
     # Some common stuff that people expect
 
     #procps
