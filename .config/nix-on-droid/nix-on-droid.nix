@@ -48,6 +48,9 @@
     kotlin
     gradle
 
+    nim
+    nimble
+
     # Some common stuff that people expect
 
     #procps
