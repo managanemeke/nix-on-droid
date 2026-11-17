@@ -56,6 +56,8 @@
 
     ruby
 
+    deno
+
     # Some common stuff that people expect
 
     #procps
