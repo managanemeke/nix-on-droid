@@ -56,7 +56,7 @@
 
     ruby
 
-    deno
+    pkgsUnstable.deno
 
     # Some common stuff that people expect
 
