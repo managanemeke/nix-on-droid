@@ -54,6 +54,8 @@
     php
     php.packages.composer
 
+    ruby
+
     # Some common stuff that people expect
 
     #procps
