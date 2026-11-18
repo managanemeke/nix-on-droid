@@ -19,7 +19,7 @@
     pkgsUnstable.nushell
     just
 
-    go
+    pkgsUnstable.go
 
     rustup
     gcc
