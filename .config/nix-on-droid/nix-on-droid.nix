@@ -38,7 +38,7 @@
     git-annex
     lua5_1
     luarocks
-    neovimPkg
+    pkgsUnstable.neovim
 
     # ocaml
     ocamlPackages.ocaml
