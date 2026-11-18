@@ -51,8 +51,8 @@
     nim
     nimble
 
-    php
-    php.packages.composer
+    pkgsUnstable.php
+    pkgsUnstable.php.packages.composer
 
     ruby
 
