@@ -26,7 +26,7 @@
     pkg-config
     gnumake
 
-    python3
+    pkgsUnstable.python3
     pkgsUnstable.uv
 
     gawk
