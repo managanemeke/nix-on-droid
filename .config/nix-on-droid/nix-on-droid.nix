@@ -36,8 +36,8 @@
 
     git
     git-annex
-    lua5_1
-    luarocks
+    pkgsUnstable.lua5_1
+    pkgsUnstable.luarocks
     pkgsUnstable.neovim
 
     # ocaml
