@@ -54,7 +54,6 @@
     pkgsUnstable.php
     pkgsUnstable.php.packages.composer
 
-    pkgsUnstable.ruby
     (pkgsUnstable.ruby.withPackages (ps: with ps; [
       nokogiri
     ]))
