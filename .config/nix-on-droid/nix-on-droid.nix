@@ -55,6 +55,7 @@
     pkgsUnstable.php.packages.composer
 
     (pkgsUnstable.ruby.withPackages (ps: with ps; [
+      cucumber
       nokogiri
     ]))
 
