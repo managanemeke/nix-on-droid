@@ -54,7 +54,7 @@
     pkgsUnstable.php
     pkgsUnstable.php.packages.composer
 
-    ruby
+    pkgsUnstable.ruby
 
     pkgsUnstable.deno
 
