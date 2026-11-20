@@ -21,7 +21,7 @@
 
     pkgsUnstable.go
 
-    rustup
+    pkgsUnstable.rustup
     gcc
     pkg-config
     gnumake
