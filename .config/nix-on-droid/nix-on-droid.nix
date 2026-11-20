@@ -17,7 +17,7 @@
     zsh
 
     pkgsUnstable.nushell
-    just
+    pkgsUnstable.just
 
     pkgsUnstable.go
 
