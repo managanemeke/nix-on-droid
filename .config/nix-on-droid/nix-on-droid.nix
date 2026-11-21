@@ -62,6 +62,7 @@
     ]))
 
     pkgsUnstable.deno
+    pkgsUnstable.nodejs
 
     unzip
     zip
