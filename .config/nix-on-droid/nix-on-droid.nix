@@ -63,6 +63,9 @@
 
     pkgsUnstable.deno
 
+    unzip
+    zip
+
     # Some common stuff that people expect
 
     #procps
@@ -77,8 +80,6 @@
     #bzip2
     #gzip
     #xz
-    #zip
-    #unzip
   ];
 
   environment.sessionVariables = {
