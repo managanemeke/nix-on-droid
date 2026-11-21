@@ -48,8 +48,8 @@
     kotlin
     gradle
 
-    nim
-    nimble
+    pkgsUnstable.nim
+    pkgsUnstable.nimble
 
     pkgsUnstable.php
     pkgsUnstable.php.packages.composer
