@@ -41,9 +41,11 @@
     neovimPkg
 
     pkgsUnstable.fzf
+    pkgsUnstable.fd
     pkgsUnstable.ripgrep
 
     strace
+    findutils
 
     # ocaml
     ocamlPackages.ocaml
@@ -76,7 +78,6 @@
     #procps
     #killall
     #diffutils
-    #findutils
     #utillinux
     #tzdata
     #hostname
