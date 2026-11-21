@@ -40,6 +40,8 @@
     pkgsUnstable.luarocks
     pkgsUnstable.neovim
 
+    strace
+
     # ocaml
     ocamlPackages.ocaml
     ocamlPackages.dune_3
