@@ -40,6 +40,8 @@
     pkgsUnstable.luarocks
     neovimPkg
 
+    pkgsUnstable.fzf
+
     strace
 
     # ocaml
