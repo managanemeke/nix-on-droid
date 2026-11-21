@@ -3,6 +3,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-neovim.url = "github:NixOS/nixpkgs/11cb3517b3af6af300dd6c055aeda73c9bf52c48";
     nix-on-droid = {
       url = "github:nix-community/nix-on-droid/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -12,6 +13,7 @@
     self,
     nixpkgs,
     nixpkgs-unstable,
+    nixpkgs-neovim,
     nix-on-droid,
   }:
   let
@@ -22,15 +24,9 @@
     pkgsUnstable = import nixpkgs-unstable {
       inherit system;
     };
-    neovimPkg = pkgsUnstable.neovim-unwrapped.overrideAttrs (old: rec {
-      version = "0.11.1";
-      src = pkgs.fetchFromGitHub {
-        owner = "neovim";
-        repo = "neovim";
-        rev = "v${version}";
-        hash = "sha256-kJvKyNjpqIKa5aBi62jHTCb1KxQ4YgYtBh/aNYZSeO8=";
-      };
-    });
+    neovimPkg = (import nixpkgs-neovim {
+      inherit system;
+    }).neovim-unwrapped;
   in {
     nixOnDroidConfigurations.default =
       nix-on-droid.lib.nixOnDroidConfiguration {
@@ -47,3 +43,4 @@
       };
   };
 }
+
