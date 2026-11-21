@@ -41,6 +41,7 @@
     neovimPkg
 
     pkgsUnstable.fzf
+    pkgsUnstable.ripgrep
 
     strace
 
