@@ -38,7 +38,7 @@
     git-annex
     pkgsUnstable.lua5_1
     pkgsUnstable.luarocks
-    pkgsUnstable.neovim
+    neovimPkg
 
     strace
 

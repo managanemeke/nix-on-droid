@@ -7,17 +7,12 @@
       url = "github:nix-community/nix-on-droid/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    neovim-repo = {
-      url = "github:neovim/neovim/v0.10.1?dir=contrib";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
   outputs = {
     self,
     nixpkgs,
     nixpkgs-unstable,
     nix-on-droid,
-    neovim-repo,
   }:
   let
     system = "aarch64-linux";
@@ -27,11 +22,19 @@
     pkgsUnstable = import nixpkgs-unstable {
       inherit system;
     };
-    neovimPkg = neovim-repo.packages.${system}.neovim;
+    neovimPkg = pkgsUnstable.neovim-unwrapped.overrideAttrs (old: rec {
+      version = "0.11.1";
+      src = pkgs.fetchFromGitHub {
+        owner = "neovim";
+        repo = "neovim";
+        tag = "v${version}";
+        hash = "sha256-kJvKyNjpqIKa5aBi62jHTCb1KxQ4YgYtBh/aNYZSeO8=";
+      };
+    });
   in {
     nixOnDroidConfigurations.default =
       nix-on-droid.lib.nixOnDroidConfiguration {
-        inherit pkgs; 
+        inherit pkgs;
         modules = [
           ./nix-on-droid.nix
           {
@@ -44,4 +47,3 @@
       };
   };
 }
-
