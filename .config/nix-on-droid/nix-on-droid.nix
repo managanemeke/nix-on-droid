@@ -65,6 +65,7 @@
 
     unzip
     zip
+    gzip
 
     # Some common stuff that people expect
 
@@ -78,7 +79,6 @@
     #man
     #gnupg
     #bzip2
-    #gzip
     #xz
   ];
 
