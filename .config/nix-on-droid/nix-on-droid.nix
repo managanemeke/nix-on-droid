@@ -44,6 +44,7 @@
     pkgsUnstable.fd
     pkgsUnstable.ripgrep
     pkgsUnstable.rip2
+    pkgsUnstable.sd
 
     strace
     findutils
