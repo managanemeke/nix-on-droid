@@ -43,6 +43,7 @@
     pkgsUnstable.fzf
     pkgsUnstable.fd
     pkgsUnstable.ripgrep
+    pkgsUnstable.rip2
 
     strace
     findutils
