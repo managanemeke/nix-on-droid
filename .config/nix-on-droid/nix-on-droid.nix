@@ -54,8 +54,9 @@
     ocamlPackages.dune_3
     ocamlPackages.findlib
 
-    kotlin
-    gradle
+    # kotlin
+    pkgsUnstable.kotlin
+    pkgsUnstable.gradle
 
     pkgsUnstable.nim
     pkgsUnstable.nimble
