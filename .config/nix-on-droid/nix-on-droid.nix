@@ -70,6 +70,7 @@
 
     pkgsUnstable.deno
     pkgsUnstable.nodejs
+    pkgsUnstable.bun
 
     unzip
     zip
